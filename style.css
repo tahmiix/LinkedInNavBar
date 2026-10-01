@@ -5,6 +5,11 @@ img {
     
 }
 
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
 
 .navbar {
     display: flex;             
@@ -18,10 +23,35 @@ img {
     
 }
 
+.nav-item{
+
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    gap: 4px; 
+}
+
+.blocks-icon{
+
+    
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    gap: 4px;
+    border-left: #060606 solid 2px;
+    
+}
+
+.icon-label-blocks{
+    border-left: #060606 solid 2px;
+}
 
 .search-container {
     display: flex;
     align-items: center;
+    
 }
 
 .search-bar {
@@ -34,14 +64,21 @@ img {
     background-repeat: no-repeat;
     text-align: right;
     padding-right: 30px;
+    width: 200px;
 }
 
 
 .icons-container {
     display: flex;
-    gap: 25px;
     align-items: center;
-    margin-left: 200px;  
+    margin-left: 50px;  
     gap: 50px;  
+    
 
 }
+
+.icon-line{
+    height: 100%
+}
+
+
