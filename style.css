@@ -1,4 +1,14 @@
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
 img {
     width: 25px;
     height: 25px;
@@ -14,13 +24,10 @@ img {
 .navbar {
     display: flex;             
     align-items: center;      
-    justify-content: flex-start; 
-    gap: 20px;                 
+    justify-content: space-between; 
+    padding: 10px 20px;                
     background-color: rgb(219, 217, 217);
     width: 100%;
-    position: fixed;
-    height: 60px;
-    
 }
 
 .nav-item{
@@ -30,6 +37,8 @@ img {
     align-items: center;     
     justify-content: center; 
     gap: 4px; 
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .blocks-icon{
@@ -51,34 +60,59 @@ img {
 .search-container {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+    margin: 0 15px;
+    max-width: 300px;
     
 }
 
 .search-bar {
-    padding: 6px 12px;
+    width: 100%;
+    padding: 8px 12px 8px 35px ;
     border: 1px solid #ccc;
     border-radius: 100px;
     background-image: url('search.png');
-    background-position: 20px center;
+    background-position: 10px center;
     background-size: 16px;
     background-repeat: no-repeat;
-    text-align: right;
-    padding-right: 30px;
-    width: 200px;
+    
+    
+    
 }
 
 
 .icons-container {
     display: flex;
     align-items: center;
-    margin-left: 50px;  
-    gap: 50px;  
+    
+    gap: 15px;  
     
 
 }
 
 .icon-line{
-    height: 100%
+    color: #665656;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding:15px;
+    }
+
+    .search-container {
+        margin: 5px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .icons-container {
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
 }
 
 
